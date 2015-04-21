@@ -1,3 +1,36 @@
 .jumbotron {
-    background-color: #DDDDDD;
+    background-color: #4c4c4c;
+}
+
+p.home {
+    font-size : 3em;
+    color: #0E6ABF;
+}
+
+html {
+    background-color: #4c4c4c;
+}
+
+
+.nav-tabs>li>a {
+    background-color: #0E6ABF;
+    border 0px;
+    color:#fff;
+}
+
+.nav-tabs>li.active>a {
+    color : #0E6ABF;
+}
+
+.nav-tabs>li.active>a:hover {
+    color: #ffffff;
+    background-color: #0E6ABF;
+    border: 0px ;
+}
+
+
+.nav-tabs>li>a:hover {
+    border: 0px;
+    background-color: #ffffff;
+    color: #0E6ABF;
 }
