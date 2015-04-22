@@ -38,3 +38,6 @@ html {
 .carousel {
     vertical-align : middle;
 }
+.carousel-inner img {
+    margin: auto;
+}
