@@ -16,6 +16,8 @@ $(document).ready(function(){
             alert("My name is Jeff!");
             alert("My name is Jeff!");
             alert("My name is Jeff!");
+            $('div.welcome').hide();
+            $('div.landing').removeClass('hide');
 
         }else {
             alert(names+" is not your Name");

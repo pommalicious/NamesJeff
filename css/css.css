@@ -34,3 +34,7 @@ html {
     background-color: #ffffff;
     color: #0E6ABF;
 }
+
+.carousel {
+    vertical-align : middle;
+}
