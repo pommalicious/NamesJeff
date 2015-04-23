@@ -1,27 +1,47 @@
 $(document).ready(function(){
-    $("img.splash").mouseover(function(){
+
+    var $splash = $("img.splash");
+    var $welcome = $('div.welcome');
+    var $landing = $('div.landing');
+    var $hovercraft = $(".hovercraft");
+    var $namewrite = $(".hovercraft>p");
+
+
+    $splash.mouseover(function(){
         $(this).attr('src',"imgs/tatum.jpg");
         $(this).css("margin" , "auto");
     });
 
-    $("img.splash").mouseout(function(){
+    $splash.mouseout(function(){
         $(this).attr('src',"imgs/nametag.jpg");
     });
 
-
-
-    $("img.splash").click(function(){
+    $splash.click(function(){
         var names=prompt("What is your Name?");
+
+            $(this).attr('src',"imgs/nametag.jpg");
         if (names == "jeff" || names == "Jeff"){
-            alert("My name is Jeff!");
-            alert("My name is Jeff!");
-            alert("My name is Jeff!");
-            $('div.welcome').hide();
-            $('div.landing').removeClass('hide');
+            $namewrite.text("JEFF!!!");
+            $hovercraft.animate({left: "-=70%"},1500,function(){
+                alert("My name is Jeff!");
+                alert("My name is Jeff!");
+                alert("My name is Jeff!");
+                $welcome.fadeOut(1000,function(){
+                    $landing.removeClass("hide");
+                });
+            });
 
         }else {
-            alert(names+" is not your Name");
-            alert("Please enter your actual name");
+            if(! names){
+                names="Casper"
+            }
+            $namewrite.text(names);
+            $hovercraft.animate({left: "-=70%"},1500,function(){
+                alert(names+" is not your Name");
+                alert("Please enter your actual name");
+                $hovercraft.css("left","101.5%")
+            });
+
         }
     });
 
