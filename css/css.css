@@ -1,17 +1,14 @@
 
-.jumbotron {
-    background-color: #4c4c4c;
-}
 
-p.home {
-    font-size : 3em;
+p.home.text-center {
+    font-size : 6vw;
     color: #0E6ABF;
-}
-.hovercraft p {
-     font-size: 12vw;
 }
 
 html {
+    background-color: #4c4c4c;
+}
+body{
     background-color: #4c4c4c;
 }
 
@@ -43,16 +40,18 @@ html {
 .carousel {
     vertical-align : middle;
 }
-.carousel-inner img {
+.img-rounded{
     margin: auto;
+    width: auto;
 }
 
 .splashktank {
     position:relative;
 }
 .jumbotron {
-    padding-top: 5%;
+    Padding-top: 5%;
     overflow: hidden;
+    background-color: #4c4c4c;
 }
 
 .hovercraft {
@@ -66,6 +65,74 @@ html {
         margin-top: 30%;
     }
 }
-div.carousel-inner img {
-    margin: auto auto;
+
+.faqss {
+    /*width: auto;*/
+    background-color: #F1FFF8;
+    border-radius: 10px;
+    padding: 5vw 5vw;
+}
+.accordion {
+    text-align: center;
+    font-size: 2.5vw;
+    color: #0E6ABF;
+}
+.accordion-inner{
+    font-size: 2vw;
+}
+.accordion-inner>a {
+    text-decoration: underline;
+    color: blue;
+}
+.accordion-heading {
+    border-radius: 10px;
+    width: 100%;
+    background-color: #0E6ABF;
+    color: #ffffff;
+    border-style: outset;
+}
+.accordion-toggle {
+    color: #ffffff;
+}
+.rightpanel{
+    text-align: center;
+    background-color: #F1FFF8;
+    color: #0E6ABF;
+    height: 50vw;
+    border-radius: 10px;
+    border-style: outset;
+}
+button {
+    margin: 0 auto;
+    height: 80%;
+    width: 100%;
+}
+.btn-lg{
+    border-style:outset;
+    margin-top: .5%;
+}
+.leftpanel {
+    text-align: center;
+    background-color: #F1FFF8;
+    color: #0E6ABF;
+    height: 50vw;
+    border-radius: 10px;
+    border-style: outset;
+
+}
+.jumbotron p{
+    font-size : 2vw;
+}
+.jumbotron h1{
+    font-size: 3vw;
+    color: #0c5fac;
+    font-weight: 700;
+}
+.sendemail {
+    text-align: center;
+}
+.centerme{vertical-align: middle}
+
+.ui-datepicker {
+    background-color: #0E6ABF;
 }

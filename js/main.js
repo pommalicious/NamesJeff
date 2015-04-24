@@ -47,3 +47,30 @@ $(document).ready(function(){
 
 
 });
+
+$('.carousel').carousel({
+    interval: 350
+});
+
+$( "#date" ).datepicker();
+
+
+
+
+$(".validate").click(function(){
+    var $modal = $(".modal-body");
+
+    if(! $modal.find("#InputName").val()){
+        alert("Please enter a name.")
+    }else if (! $modal.find("#InputEmail").val()){
+        alert("Please enter an email")
+    }else if (! $modal.find("#date").val() && ! $modal.find("#sendnow").is(":checked")){
+        console.log($modal.find("#date").val());
+        console.log(1);
+        alert("Choose a date to share Jeff. Or check box to send immediately")
+    }else {
+
+    }
+
+});
+
