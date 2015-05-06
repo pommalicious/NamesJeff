@@ -1,5 +1,5 @@
 # NamesJeff
-Convince someone their name is Jeff
+First web project. (with bootstrap)
 
 Just learned basic Css,html,js and picking up on twitter. This goal for this project was to learn a framework and incorporate jquery,modals,form validations and make responsive.
 
